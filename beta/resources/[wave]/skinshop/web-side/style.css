@@ -1,0 +1,265 @@
+::-webkit-scrollbar { width: 0; }
+::selection { background: transparent; }
+::-moz-selection { background: transparent; }
+
+.container {
+	height: 100vh;
+}
+
+::-webkit-inner-spin-button {
+	display: none;
+}
+
+.clothing-menu-container {
+	top: 0;
+	right: 0;
+	margin: 0;
+	width: 42vh;
+	display: none;
+	height: 100vh;
+	position: absolute;
+	background-color: rgba(15,15,15,.5);
+}
+
+.clothing-menu-header {
+	top: 1.719vw;
+	height: 6vh;
+	width: 100%;
+	position: relative;
+}
+
+.clothing-menu-header-btn {
+	height: 55%;
+	top: 2.3vh;
+	float: left;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	line-height: 3.5vh;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+	transition: all 0.1s linear;
+}
+
+.clothing-menu-header-btn:hover {
+	background: linear-gradient(90deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+}
+
+.selected {
+	color: #fff;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+}
+
+.clothing-menu-header-btn > p {
+	font-size: 1.1vh;
+	letter-spacing: 0.1vh;
+	text-transform: uppercase;
+}
+
+.clothing-menu-header-cameras {
+	position: absolute;
+	height: 5.5vh;
+	width: 100%;
+	top: -1vh;
+}
+
+.clothing-menu-header-camera-btn {
+	height: 55%;
+	top: 2.3vh;
+	width: 33.33%;
+	float: left;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	line-height: 3.4vh;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+	transition: all 0.1s linear;
+}
+
+.selected-cam {
+	color: #fff;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+}
+
+.clothing-menu-header-camera-btn:hover {
+	background: linear-gradient(90deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+}
+
+.clothing-menu-header-camera-btn > i {
+	font-size: 1.4vh;
+}
+
+.clothing-menu-character-container, .clothing-menu-accessoires-container {
+	display: none;
+	position: absolute;
+	margin: 0 auto;
+	left: 0.3vh;
+	right: 0;
+	top: 10.5vh;
+	height: 83vh;
+	width: 92%;
+	overflow-y: scroll !important;
+}
+
+.clothing-menu-option {
+	position: relative;
+	width: 100%;
+	height: 7.813vw;
+	background: rgba(15,15,15,.75);
+	margin-bottom: 0.781vw;
+}
+
+.clothing-menu-option-header {
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+	padding: 0.677vw 0;
+}
+
+.clothing-menu-option-header > p {
+	text-transform: uppercase;
+	font-size: 1.0vh;
+	letter-spacing: 0.1vh;
+}
+
+.clothing-menu-option-item {
+	position: relative;
+	float: left;
+	height: 50%;
+	width: 40%;
+	margin-left: 2.5vh;
+	margin-top: 1.2vh;
+}
+
+.clothing-menu-option-item-left {
+	left: 0;
+	bottom: 0;
+	width: 2.604vw;
+	height: 1.563vw;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	padding-top: 0.729vw;
+	transition: all 0.1s linear;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.clothing-menu-option-item-left:hover {
+	background: linear-gradient(90deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+}
+
+.clothing-menu-option-item-right {
+	right: 0;
+	bottom: 0;
+	width: 2.604vw;
+	height: 1.563vw;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	padding-top: 0.729vw;
+	transition: all 0.1s linear;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.clothing-menu-option-item-right:hover {
+	background: linear-gradient(90deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+}
+
+input[type="number"] {
+	font-family: 'Carrois Gothic SC';
+}
+
+.item-number {
+	position: absolute;
+	width: 2.24vw;
+	height: 2.188vw;
+	top: 1.615vw;
+	left: 3.125vw;
+	border: 0;
+	text-align: center;
+	font-size: 0.625vw;
+	letter-spacing: 0.1vh;
+	color: #fff;
+	outline: none;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+	transition: all 0.1s linear;
+	border-radius: 4px;
+}
+
+.item-number:focus {
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+}
+
+.clothing-menu-option-item-header {
+	text-align: center;
+	bottom: 5vh;
+	text-transform: uppercase;
+	font-size: 0.573vw;
+	letter-spacing: 0.052vw;
+	color: #fff;
+}
+
+.clothing-menu-option-item-header > p {
+	padding: 0.2vh;
+}
+
+.clothing-menu-option-buttons {
+	position: absolute;
+	bottom: 0.625vw;
+	width: 100%;
+	height: 2.135vw;
+}
+
+.clothing-menu-option-button {
+	float: left;
+	width: 10.677vw;
+	height: 100%;
+	margin-left: 1.042vw;
+	margin-right: 0.365vw;
+	position: relative;
+	background: linear-gradient(0deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+	transition: all 0.1s linear;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.clothing-menu-option-button:hover {
+	background: linear-gradient(90deg, rgba(44,125,160,1) 0%, rgba(1,79,134,1) 100%);
+}
+
+.clothing-menu-option-button > p {
+	margin-top: 0.729vw;
+	font-size: 0.625vw;
+	letter-spacing: 0.1vh;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+
+.clothing-menu-option-button2 {
+	float: left;
+	width: 10.677vw;
+	height: 100%;
+	position: relative;
+	background: linear-gradient(0deg, rgba(255,119,51,1) 0%, rgba(255,92,10,1) 100%);
+	transition: all 0.1s linear;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.clothing-menu-option-button2:hover {
+	background: linear-gradient(90deg, rgba(255,119,51,1) 0%, rgba(255,92,10,1) 100%);
+}
+
+.clothing-menu-option-button2 > p {
+	margin-top: 0.729vw;
+	font-size: 0.625vw;
+	letter-spacing: 0.1vh;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}

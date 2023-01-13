@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body style="display: none;">
+		<section class="leftC">
+      <div class="sectionTitle">
+        <h1>Loja de tatuagens</h1>
+        <div id="subtitle">Editando na categoria <b id="categoryName">Cabeça</b>.</div>
+				<div id="reset"><i class="fa-solid fa-arrows-rotate"></i></div>
+        <div class="sectionCategorys">
+          <div class="option active" category-name="head"><img src="images/head.png"></div>
+          <div class="option" category-name="leftarm"><img src="images/arm-left.png"></div>
+          <div class="option" category-name="rightarm"><img src="images/arm-right.png"></div>
+          <div class="option" category-name="torso"><img src="images/chest.png"></div>
+          <div class="option" category-name="leftleg"><img src="images/leg-left.png"></div>
+        </div>
+      </div>
+			<div class="sectionContent" id="items"></div>
+			<p id="infoRoll">Role para baixo para ver mais tatuagens <i class="fa-solid fa-computer-mouse-scrollwheel"></i></p>
+		</section>
+
+		<footer>
+			<div class="hotkey le">Rotacionar a esquerda <span>[A]</span></div>
+			<div class="hotkey le">Rotacionar a direita <span>[D]</span></div>
+			<button id="save"><i class="fa-solid fa-check"></i> salvar</button>
+			<div class="hotkey ri">Levantar as mãos <span>[X]</span></div>
+			<div class="hotkey ri">Salvar e sair <span>[ESC]</span></div>
+		</footer>
+
+		<script src="nui://game/ui/jquery.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+<!-- <div id="tattoo-container">
+	<div class="column">
+		<div class="title-area">Categoria</div>
+		<div class="categories">
+			<div class="category" category-name="head"></div>
+			<div class="category" category-name="leftarm"></div>
+			<div class="category" category-name="rightarm"></div>
+			<div class="category" category-name="torso"></div>
+			<div class="category" category-name="leftleg"></div>
+			<div class="category" category-name="rightleg"></div>
+			<div class="category" category-name="hair"></div>
+			<div id="reset">Limpar</div>
+		</div>
+	</div>
+
+	<div class="column" style="text-align: right;"><br><br><br><br>
+		<div class="hotkey">Rotacionar a esquerda <span>[A]</span></div>
+		<div class="hotkey">Rotacionar a direita <span>[D]</span></div>
+		<div class="hotkey">Levantar as mãos <span>[X]</span></div>
+		<div class="hotkey">Salvar e sair <span>[ESC]</span></div>
+	</div>
+
+	<div class="category-items">
+		<div class="title-area" id="category-name">...</div>
+		<div id="items"></div>
+	</div>
+</div> -->

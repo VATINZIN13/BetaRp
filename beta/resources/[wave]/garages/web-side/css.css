@@ -1,0 +1,231 @@
+body {
+	background: transparent !important; 
+	 margin:  0 auto;
+}
+
+::selection { background: transparent; }
+::-moz-selection { background: transparent; }
+
+
+/* CSS Document */
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+.fadeIn {
+-webkit-animation: fadeIn 1s ease-in-out;
+-moz-animation: fadeIn 1s ease-in-out;
+-o-animation: fadeIn 1s ease-in-out;
+animation: fadeIn 1s ease-in-out;
+}
+
+
+    .container2 {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+		padding-top: 100px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+		
+    }
+	.princiap-box {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		
+		margin: 0 auto;
+		
+
+	}
+    .box {
+        width: 70%;
+        min-height: 700px;
+		height: auto;
+        background: #191919;
+		-webkit-border-radius: 20px;
+		border-radius: 20px;
+		padding-top: 60px;
+		margin: 0 auto;
+    }
+	 .box_logo {
+			width: 70%;
+			min-height: 50px;
+			height: auto;
+		 	margin: 0 auto;
+		}
+	.logo{
+		width: 28%;
+		height: auto;
+		position:  absolute;
+		margin-top: 15px;
+	}
+	.logo img{
+			width: 100%;
+			height: auto;
+		}
+
+#lista_carros{
+	 float: left;
+	padding: 10px;
+	width: 27%;
+	height: 630px;
+	text-align: center;}
+
+#publicidade {
+	float: right;
+	padding: 10px;
+	width: 68%;
+	height: 630px;
+	
+}
+
+#box_barra::-webkit-scrollbar-track {
+    background-color: #0e0e0e3f;
+    -webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+}
+#box_barra::-webkit-scrollbar {
+    width: 8px;
+    background: #0e0e0e3f;
+    -webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+}
+#box_barra::-webkit-scrollbar-thumb {
+    background: #406882;
+    -webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+}
+
+#box_barra{ width: 98%; 	height: 570px; 	overflow: auto; padding-right: 20px;}
+
+.titulos{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 10px;
+	
+}
+.titulos img{
+	width: 300px;
+	height: auto;	
+}
+
+.box_slide{
+	
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.box_btnc {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.btn-aurora {
+	width: 150px;
+	background-color: #406882;
+	color: #fff;
+	-webkit-border-radius: 10px;
+border-radius: 10px;
+	
+}
+
+.item-garagem{
+	background-color: #0b0b0b;
+	width: 99%;
+	height: auto;
+	text-align: center;
+	padding-top: 20px;
+	filter: drop-shadow(0 0 1.5rem rgba(0, 0, 0, 0.322));
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	border: 2px solid #0b0b0b;
+	
+}
+.item-garagem.active {
+	text-align: center;
+	background: #1d1d1d;
+	border: 2px solid #406882;
+}
+.item-garagem img {
+	width: 60%;
+	height: auto;
+}
+.nome-carro {
+	
+	color: #406882;
+	width: 50%;
+	font-size: 18px;
+	height: auto;
+	text-align: center;
+	padding: 5px 20px 5px 20px;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 10px;
+}
+
+.foto-carro{
+	
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+.box-infos {
+	
+	background-color: #101010;
+	width: 80%;
+	height: auto;
+	min-height: 100px;
+	margin:  0 auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	
+}
+.box-infos h3 {
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.box-infos span {
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 5px;
+	
+}

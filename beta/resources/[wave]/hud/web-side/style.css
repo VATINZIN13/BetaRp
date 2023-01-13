@@ -1,0 +1,299 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	overflow: hidden;
+	background: transparent;
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+#displayLogo {
+	float: right;
+    /*display: flex;
+    justify-content: flex-end;*/
+	opacity: 0.7;
+}
+
+#displayLogo img {
+    margin-top: 35px;
+	margin-right: 35px;
+    width: 180px;
+}
+
+#displayHud {
+	right: 35px;
+	bottom: 25px;
+	display: none;
+	min-width: 400px;
+	max-width: 400px;
+	position: absolute !important;
+}
+
+#displayTop {
+	float: right;
+	min-width: 400px;
+	max-width: 400px;
+	text-align: right;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	transform: skewX(-12deg);
+}
+
+#displayMiddle {
+	float: left;
+	color: #D4D4D4;
+	margin-top: 15px;
+	margin-left: 25px;
+	padding: 15px 0;
+	font-size: 11px;
+	min-width: 500px;
+	max-width: 500px;
+	text-align: left;
+	letter-spacing: 0.5px;
+}
+
+#displayMiddle text {
+	padding: 6px 15px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	margin-right: 10px;
+	background: rgba(17,17,17,0.7);
+}
+
+#displayMiddle active {
+	color: #ad9d2c;
+	padding: 6px 15px;
+	border-radius: 3px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	background: rgba(17,17,17,0.7);
+	text-shadow: none;
+}
+
+#displayMiddle inative {
+	padding: 6px 15px;
+	border-radius: 3px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	background: rgba(17,17,17,0.7);
+}
+
+#displayBottom {
+	float: right;
+	min-width: 500px;
+	max-width: 500px;
+	transform: skewX(-15deg);
+}
+
+rect {
+	transform-origin: center;
+	position: absolute;
+	fill: rgba(0,0,0,0.7);
+}
+
+#progressBackground {
+	float: right;
+	width: 34px;
+	height: 34px;
+	display: none;
+	margin-right: 5px;
+}
+
+#progressDisplay {
+	stroke: #eee;
+	stroke-width: 6;
+	margin-left: 3px;
+	fill: transparent;
+	stroke-dasharray: 136;
+	stroke-dashoffset: 50;
+}
+
+.healthBackground {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+}
+
+.healthDisplay {
+	fill: #2f9244;
+
+	transform: scaleY(-1);
+	transition: all 2s;
+}
+
+.armourBackground {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+}
+
+.armourDisplay {
+	fill: #753ae3;
+
+	transform: scaleY(-1);
+	transition: all 2s;
+}
+
+.waterBackground {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+}
+
+.waterDisplay {
+	fill: #1158a9;
+
+	transform: scaleY(-1);
+	transition: all 2s;
+}
+
+.foodBackground {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+}
+
+.foodDisplay {
+	fill: #c06917;
+
+	transform: scaleY(-1);
+	transition: all 2s;
+}
+
+.stressBackground {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+}
+
+.stressDisplay {
+	fill: #bfa94e;
+
+	transform: scaleY(-1);
+	transition: all 2s;
+}
+
+.oxigenBackground {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+}
+
+.oxigenDisplay {
+	fill: #525a69;
+
+	transform: scaleY(-1);
+	transition: all 2s;
+}
+
+.voiceBackground {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 0px;
+}
+
+.voiceDisplay {
+	fill: #8B8B8B;
+
+	transform: scaleY(-1);
+	transition: all 2s;
+}
+
+#seatBelt, #hardBelt {
+	float: right;
+	display: none;
+	color: #939393;
+	font-size: 11px;
+	font-weight: 300;
+/*	line-height: 12px;*/
+	padding-top: 18px;
+	padding-left: 15px;
+	letter-spacing: 0.5px;
+	text-shadow: 1px 1px #000;
+}
+
+#seatBelt img, #hardBelt img {
+	margin-top: 14px;
+}
+
+#mph {
+	float: right;
+	color: #939393;
+	font-size: 11px;
+	font-weight: 700;
+	padding-left: 20px;
+	letter-spacing: 0.5px;
+	text-shadow: 1px 1px #000;
+}
+
+#mph s {
+	color: #e5e5e5;
+	font-size: 48px;
+	text-decoration: none;
+	font-family: "Jura",sans-serif;
+}
+
+.gasBackground {
+	float: right;
+	width: 14px;
+	height: 64px;
+	margin-left: 5px;
+}
+
+.gasDisplay {
+	fill: #ad3d3d;
+
+	transform: scaleY(-1);
+	transition: all 2s;
+}
+
+.mphBackground {
+	float: right;
+	width: 14px;
+	height: 64px;
+	margin-left: 15px;
+}
+
+.mphDisplay {
+	fill: #b59e45;
+
+	transform: scaleY(-1);
+	transition: all 1.7s;
+}
+
+#movieTop {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 12%;
+	display: none;
+	background: #000;
+	position: absolute !important;
+}
+
+#movieBottom {
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 12vw;
+	display: none;
+	background: #000;
+	position: absolute !important;
+}
+
+#hoodDisplay {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	background: #000;
+	position: absolute !important;
+}

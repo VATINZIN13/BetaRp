@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+  <link rel="stylesheet" href="src/css/app.css">
+</head>
+  <body style="display: none;">
+
+    <section class="leftC">
+      <div class="sectionTitle">
+        <h1>criação de personagem</h1>
+        <div id="subtitle">Editando na categoria <b id="categoryName">parentesco</b>.</div>
+        <div class="sectionCategorys">
+          <div class="option active" data-index="parentesco"><img src="src/img/parrents.png"></div>
+          <div class="option" data-index="nariz"><img src="src/img/nose.png"></div>
+          <div class="option" data-index="queixo"><img src="src/img/chin.png"></div>
+          <div class="option" data-index="bochecha"><img src="src/img/cheek.png"></div>
+          <div class="option" data-index="pescoco"><img src="src/img/neck.png"></div>
+        </div>
+      </div>
+
+      <div class="sectionContent" id="parentesco">
+        <div class="item">
+          <div class="icon"><img src="src/img/parrents.png"></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Pai</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">44</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="fathers" class="slider" oninput="change(this)" min="0" max="44" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon"><img src="src/img/parrents.png"></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Mãe</span>
+            <small>com maximo de <b id="minRange">21</b> / <b id="maxRange">45</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="mothers" class="slider" oninput="change(this)" min="21" max="45" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon"><img src="src/img/parrents.png"></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Parentesco</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">100</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="kinship" class="slider" oninput="change(this)" min="0" max="100" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon"><img src="src/img/parrents.png"></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cor dos olhos</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">31</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input class="slider" oninput="change(this)" id="eyecolor" min="0" max="31" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon"><img src="src/img/parrents.png"></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cor da Pele</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">100</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input class="slider" oninput="change(this)" id="skincolor" type="range" min="0" max="100" value="0">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionContent" id="nariz" style="display: none;">
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Altura do nariz</span>
+            <small>com maximo de <b id="minRange">-10</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face01" class="slider" oninput="change(this)" min="-10" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Largura do nariz</span>
+            <small>com maximo de <b id="minRange">-10</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face00" class="slider" oninput="change(this)" min="-10" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Tamanho do nariz</span>
+            <small>com maximo de <b id="minRange">-10</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face04" class="slider" oninput="change(this)" min="-10" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionContent" id="queixo" style="display: none;">
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Grossura do queixo</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">20</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face16" class="slider" oninput="change(this)" min="0" max="20" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Alinhamento do queixo</span>
+            <small>com maximo de <b id="minRange">-20</b> / <b id="maxRange">20</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face17" class="slider" oninput="change(this)" min="-20" max="20" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Tamanho do queixo</span>
+            <small>com maximo de <b id="minRange">-20</b> / <b id="maxRange">20</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face15" class="slider" oninput="change(this)" min="-20" max="20" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionContent" id="bochecha" style="display: none;">
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Largura da bochecha</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">20</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face10" class="slider" oninput="change(this)" min="0" max="20" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Tamanho da bochecha</span>
+            <small>com maximo de <b id="minRange">-20</b> / <b id="maxRange">20</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face13" class="slider" oninput="change(this)" min="-20" max="20" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionContent" id="pescoco" style="display: none;">
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Grossura do pescoço</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">0</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face14" class="slider" oninput="change(this)" min="0" max="20" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon"><img src=""></div>
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Tamanho do pescoço</span>
+            <small>com maximo de <b id="minRange">-20</b> / <b id="maxRange">20</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face19" class="slider" oninput="change(this)" min="-20" max="20" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <section class="rightC" style="transform: scaleX(-1);">
+      <div class="sectionTitle">
+        <h1>aparência do personagem</h1>
+        <div id="subtitle">Editando na categoria <b id="categoryName">Rosto</b>.</div>
+        <div class="sectionCategorys">
+          <div class="option active" data-index="rosto"><img src="src/img/face.png"></div>
+          <div class="option" data-index="cabelo"><img src="src/img/hair.png"></div>
+          <div class="option" data-index="barba"><img src="src/img/beard.png"></div>
+          <div class="option" data-index="maquiagem"><img src="src/img/makeup.png"></div>
+          <div class="option" data-index="boca"><img src="src/img/lips.png"></div>
+        </div>
+      </div>
+
+     <div class="sectionContent" id="rosto">
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Acne</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">23</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="acne" class="slider" oninput="change(this)" min="0" max="23" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src="src/img/face.png"></div>
+        </div>
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Manchas</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">12</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="stains" class="slider" oninput="change(this)" min="0" max="12" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src="src/img/face.png"></div>
+        </div>
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Sardas</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">17</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="freckles" class="slider" oninput="change(this)" min="0" max="17" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src="src/img/face.png"></div>
+        </div>
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Envelhecimento</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">15</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input class="slider" oninput="change(this)" id="aging" min="0" max="15" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src="src/img/face.png"></div>
+        </div>
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Altura da testa</span>
+            <small>com maximo de <b id="minRange">-10</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face06" class="slider" oninput="change(this)" min="-10" max="10" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src="src/img/face.png"></div>
+        </div>
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Altura da olheira</span>
+            <small>com maximo de <b id="minRange">-10</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face08" class="slider" oninput="change(this)" min="-10" max="10" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src="src/img/face.png"></div>
+        </div>
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Tamanho da olheira</span>
+            <small>com maximo de <b id="minRange">-10</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face09" class="slider" oninput="change(this)" min="-10" max="10" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src="src/img/face.png"></div>
+        </div>
+      </div>
+
+      <div class="sectionContent" id="cabelo" style="display: none;">
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cabelo</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">100</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="hair" class="slider" oninput="change(this)" min="0" max="999" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cor do cabelo</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">63</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="haircolor" class="slider" oninput="change(this)" min="0" max="63" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Reflexo do cabelo</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">63</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="haircolor2" class="slider" oninput="change(this)" min="0" max="63" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Sobrancelha</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">34</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="eyebrow" class="slider" oninput="change(this)" min="0" max="34" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Intensidade da sobrancelha</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="eyebrowintensity" class="slider" oninput="change(this)" min="0" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cor da sobrancelha</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">54</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="eyebrowcolor" class="slider" oninput="change(this)" min="0" max="54" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+      </div>
+
+      <div class="sectionContent" id="barba" style="display: none;">
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Barba</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">28</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="beard" class="slider" oninput="change(this)" min="0" max="28" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Intensidade da barba</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="beardintentisy" class="slider" oninput="change(this)" min="0" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cor da barba</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">54</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="beardcolor" class="slider" oninput="change(this)" min="0" max="54" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+      </div>
+
+      <div class="sectionContent" id="maquiagem" style="display: none;">
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Maquiagem</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">72</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="makeup" class="slider" oninput="change(this)" min="0" max="72" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Intensidade da maquiagem</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="makeupintensity" class="slider" oninput="change(this)" min="0" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cor do maquiagem</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">62</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="makeupcolor" class="slider" oninput="change(this)" min="0" max="62" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Blush</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">32</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="blush" class="slider" oninput="change(this)" min="0" max="32" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Intensidade do Blush</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="blushintentisy" class="slider" oninput="change(this)" min="0" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cor do Blush</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">63</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="blushcolor" class="slider" oninput="change(this)" min="0" max="63" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+      </div>
+
+      <div class="sectionContent" id="boca" style="display: none;">
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Grossura da boca</span>
+            <small>com maximo de <b id="minRange">-20</b> / <b id="maxRange">20</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="face12" class="slider" oninput="change(this)" min="-20" max="20" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Batom</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="lipstick" class="slider" oninput="change(this)" min="0" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Cor do batom</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">63</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="lipstickcolor" class="slider" oninput="change(this)" min="0" max="63" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+
+        <div class="item">
+          <div class="itemContent">
+            <span><i class="fa-solid fa-sliders-simple"></i> Intensidade do batom</span>
+            <small>com maximo de <b id="minRange">0</b> / <b id="maxRange">10</b></small>
+            <div class="sliderInput">
+              <div class="arrow" onclick="prevRange(this)"><i class="fa-regular fa-chevron-left"></i></div>
+              <div class="rangeSlider">
+                <input id="lipstickintensity" class="slider" oninput="change(this)" min="0" max="10" value="0" type="range">
+              </div>
+              <div class="arrow" onclick="nextRange(this)"><i class="fa-regular fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="icon"><img src=""></div>
+        </div>
+      </div>
+      
+    </section>
+
+    <footer>
+      <h1>confirmar aparência</h1>
+      <button class="done-btn"><i class="fa-solid fa-check"></i> finalizar</button>
+    </footer>
+
+  </body>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="src/js/app.js"></script>
+</html>

@@ -1,0 +1,287 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat";
+}
+
+html,body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.console {
+	color: red;
+	background-color: white;
+}
+
+.wprompt {
+	color: #fff;
+	width: 600px;
+	height: 150px;
+	display: flex;
+	border-radius: 3px;
+	position: absolute;
+	padding: 10px 15px;
+	font-family: "Roboto";
+	flex-direction: column;
+	background-color: rgba(15,15,15,.75);
+}
+
+.wprompt h1 {
+	font-size: 13px;
+	font-weight: 300;
+	padding: 7px 0 12px 5px;
+}
+
+.wprompt textarea {
+	flex: 1;
+	color: #ccc;
+	width: 100%;
+	resize: none;
+	padding: 10px;
+	font-size: 15px;
+	box-sizing: border-box;
+	outline: none !important;
+	background-color: rgba(15,15,15,.50);
+	border: 1px solid rgba(255,255,255,0.2);
+}
+
+.wprompt textarea:focus {
+	outline: none !important;
+}
+
+.wprompt .help {
+	font-size: 12px;
+	padding: 12px 0 7px 5px;
+}
+
+#deathDiv {
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	font-family: "Montserrat";
+}
+
+#deathDiv::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 65%;
+	transform: matrix(1, 0, 0, -1, 0, 0);
+	background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#deathText {
+	position: absolute;
+	left: 50%;
+	bottom: 150px;
+	z-index: 101;
+	color: #fff;
+	font-weight: 600;
+	font-size: 30px;
+	border-radius: 3px;
+	text-align: center;
+	text-align: center;
+	text-transform: uppercase;
+	transform: translate(-50%,0);
+}
+
+#deathText small {
+	position: relative;
+	top: -7px;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+#deathText color {
+	font-weight: 400;
+	color: #84adeb;
+}
+
+#identityDiv {
+	top: 175px;
+	right: 50px;
+	color: #ccc;
+	float: right;
+	display: none;
+	max-width: 345px;
+	border-radius: 3px;
+	position: absolute;
+	padding: 10px 20px 20px;
+	text-shadow: 1px 1px #000;
+	background: rgba(15,15,15,.75);
+	border-left: 5px solid #2e6e4c;
+}
+
+.identityLeft {
+	color: #666;
+	float: left;
+	width: 175px;
+	font-size: 11px;
+	margin-top: 10px;
+	line-height: 15px;
+}
+
+.identityRight {
+	color: #777;
+	float: left;
+	width: 150px;
+	font-size: 11px;
+	margin-top: 10px;
+	line-height: 15px;
+	margin-left: 15px;
+}
+
+.identityLeft r, .identityRight r {
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-family: "Saira";
+}
+
+.requestManager {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transform: translate(-50%,0);
+}
+
+.requestManager .request {
+	position: relative;
+	padding: 20px;
+	border-radius: 5px;
+	padding-bottom: 25px;
+	background: rgba(17, 17, 17, 0.7);
+	border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.requestManager .request .bar {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 100px;
+	height: 3px;
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.11);
+}
+
+.requestManager .request .bar .fill {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	background-color: #84adeb;
+}
+
+.requestManager .request::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 2px;
+	left: -1px;
+	height: 60%;
+	border-radius: 30px;
+	background-color: #84adeb;
+	transform: translate(0,-50%);
+}
+
+.requestManager .title {
+	width: 100%;
+	display: flex;
+	margin-right: 30px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.requestManager .title .column {
+	display: flex;
+	align-items: center;
+}
+
+.requestManager .title .column i {
+	color: #84adeb;
+	font-size: 25px;
+}
+
+.requestManager .title .column p {
+	display: flex;
+	color: #fff;
+	font-size: 12px;
+	margin-left: 10px;
+	flex-direction: column;
+	text-transform: uppercase;
+}
+
+.requestManager .title .column p span {
+	font-weight: 600;
+	margin-bottom: 2px;
+}
+
+.requestManager .title .column p small {
+opacity: .5;
+font-size: 8px;
+font-weight: 300;
+letter-spacing: 1px;
+}
+
+.requestManager .title .column .btn {
+display: flex;
+border-radius: 30px;
+margin-right: 10px;
+align-items: center;
+background: #84adeb;
+}
+
+.requestManager .title .column .btn .mark {
+width: 25px;
+height: 25px;
+display: flex;
+color: #fff;
+font-size: 10px;
+font-weight: 600;
+border-radius: 100%;
+align-items: center;
+justify-content: center;
+border: 0.5px solid #111111;
+background-color: #84adeb;
+}
+
+.requestManager .title .column .btn button {
+border: 0;
+width: 55px;
+color: #fff;
+outline: none;
+padding: 5px 0;
+font-size: 7px;
+font-weight: bold;
+padding-right: 5px;
+border-radius: 30px;
+letter-spacing: .5px;
+background-size: cover;
+text-transform: uppercase;
+background-color: transparent;
+}
+
+.requestManager .title .column .btn:last-child {
+background: #1d1d1dbe;
+}
+.requestManager .title .column .btn:last-child .mark {
+background: #393939;
+}
+
+.requestManager #text {
+font-size: 9px;
+max-width: 450px;
+margin-top: 15px;
+color: #dbdbdb;
+letter-spacing: 1px;
+text-transform: uppercase;
+}

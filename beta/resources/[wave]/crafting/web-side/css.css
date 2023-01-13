@@ -1,0 +1,247 @@
+::-webkit-scrollbar { width: 0.313vw; }
+::-webkit-scrollbar-track { background: rgba(15,15,15,.75); }
+::-webkit-scrollbar-thumb { background: #1A374D; }
+::-webkit-scrollbar-thumb:hover { background: #1A374D; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+* {
+	overflow: hidden;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+.inventory {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	position: fixed;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background: rgba(0,0,0,0.55);
+}
+
+.innerInventory {
+	display: flex;
+	flex-direction: column;
+}
+
+.sections {
+	height: 30.677vw;
+	display: flex;
+}
+
+.invLeft, .invRight {
+	row-gap: 0.156vw;
+	display: grid;
+	column-gap: 0.156vw;
+	overflow-y: scroll;
+	padding-right: 0.156vw;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.item {
+	width: 5.99vw;
+	height: 7.552vw;
+	display: flex;
+	flex-direction: column;
+	text-shadow: 0.052vw 0.052vw #000;
+	background: rgba(15,15,15,.5);
+}
+
+.populated {
+	background: rgba(15,15,15,.75);
+	background-size: 86% !important;
+}
+
+.populated:hover, .hoverControl {
+	background: rgba(15,15,15,.90);
+}
+
+.item .top {
+	color: #999;
+	display: flex;
+	font-size: 0.5833333333333334vw;
+	justify-content: space-between;
+}
+
+.itemAmount {
+	margin: 0.781vw 0.781vw 0 0;
+}
+
+.itemWeight {
+	margin: 0.781vw 0 0 0.781vw;
+}
+
+.item .nameItem {
+	align-self: center;
+
+	width: 100%;
+	color: #ccc;
+
+	padding: 0.417vw 0.521vw;
+	font-size: 0.5666666666666667vw;
+	text-align: center;
+	white-space: nowrap;
+	letter-spacing: 0.052vw;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+
+	background: #111;
+}
+
+.item .durability {
+	width: 100%;
+	height: 0.156vw;
+	margin-top: auto;
+	background: #2e6e4c;
+}
+
+.invMiddle {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+input {
+	text-align: center;
+}
+
+input::placeholder {
+	color: #ccc;
+}
+
+.invMiddle div, .invMiddle input {
+	border: 0;
+	width: 70%;
+	outline: none;
+	color: #ccc;
+	padding: 0.833vw 0;
+	font-size: 0.625vw;
+	text-align: center;
+	margin-bottom: 0.625vw;
+	letter-spacing: 0.052vw;
+	background: rgba(64,104,130,.75);
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#weight {
+	max-width: 31.042vw;
+}
+
+#weightTextLeft {
+	float: left;
+	color: #ccc;
+	font-size: 0.625vw;
+	min-width: 30.208vw;
+	max-width: 30.208vw;
+	text-align: right;
+	margin-right: 0.781vw;
+	margin-bottom: 0.781vw;
+	letter-spacing: 0.052vw;
+}
+
+#weightBarLeft {
+	float: left;
+	min-height: 0.521vw;
+	max-height: 0.521vw;
+	min-width: 31.042vw;
+	max-width: 31.042vw;
+	margin-bottom: 0.26vw;
+	background: rgba(15,15,15,.75);
+}
+
+#weightTextRight {
+	float: right;
+	color: #9c9c9c;
+	font-size: 0.625vw;
+	min-width: 30.208vw;
+	max-width: 30.208vw;
+	text-align: left;
+	margin-left: 0.781vw;
+	margin-bottom: 0.781vw;
+	letter-spacing: 0.052vw;
+}
+
+#weightBarRight {
+	float: right;
+	min-height: 0.521vw;
+	max-height: 0.521vw;
+	min-width: 31.042vw;
+	max-width: 31.042vw;
+	margin-bottom: 0.26vw;
+	background: rgba(15,15,15,.75);
+}
+
+#weightContent {
+	float: left;
+	min-height: 0.521vw;
+	max-height: 0.521vw;
+	max-width: 31.042vw;
+	background: #406882;
+	transition: all 0.9s;
+}
+
+.ui-helper-hidden-accessible {
+	display: none;
+}
+
+.ui-tooltip {
+	color: #444;
+	z-index: 9999;
+	font-size: 0.573vw;
+	background: #ccc;
+	position: absolute;
+	letter-spacing: 0.052vw;
+	padding: 1.042vw 1.042vw 0.781vw;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.ui-tooltip:hover {
+	display: none;
+}
+
+.ui-tooltip item {
+	float: left;
+	font-size: 0.729vw;
+	min-width: 10.417vw;
+	letter-spacing: 0.104vw;
+}
+
+.ui-tooltip legenda {
+	float: left;
+	min-width: 11.719vw;
+	margin-top: 0.521vw;
+	padding-top: 0.313vw;
+	line-height: 1.042vw;
+	letter-spacing: 0.104vw;
+	border-top: 1px solid #b2b2b2;
+}
+
+.ui-tooltip description {
+	float: left;
+	color: #666;
+	font-size: 0.521vw;
+	max-width: 13.021vw;
+	margin-top: 0.26vw;
+}
+
+.ui-tooltip s {
+	color: #666;
+	padding: 0 0.26vw;
+	text-decoration: none;
+}
+
+.ui-tooltip r {
+	color: #666;
+}
